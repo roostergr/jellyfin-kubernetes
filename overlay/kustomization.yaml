@@ -18,7 +18,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/tls/0/hosts/0
-        value: jellyfin.yourrealdomain.com 
+        value: yourhost.yourdomain.com 
       - op: replace
         path: /spec/rules/0/host
-        value: jellyfin.yourrealdomain.com 
+        value: yourhost.yourdomain.com 
