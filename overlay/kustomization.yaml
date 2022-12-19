@@ -10,7 +10,7 @@ namespace: jellyfin
 bases:
   - ../base/
 
-# updates base configuration to something implementation specific
+# updates base configuration with hostname and path to media files.
 patches:
   - target:
       kind: Ingress
