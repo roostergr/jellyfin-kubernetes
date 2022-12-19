@@ -1,0 +1,23 @@
+# This kustomization file contains exmaples of likely deployment specific configuration changes
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: jellyfin
+
+# basic jellyfin server deployment resources
+bases:
+  - ../base/
+
+
+patches:
+  - target:
+      kind: Ingress
+      name: jellyfin-ingress
+    patch: |-
+      - op: replace
+        path: /spec/tls/0/hosts/0
+        value: jellyfin.yourrealdomain.com 
+      - op: replace
+        path: /spec/rules/0/host
+        value: jellyfin.yourrealdomain.com 
