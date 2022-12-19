@@ -10,6 +10,8 @@ To deploy this project you will need:
 - A working kubernetes cluster. See [here] for instructions on getting started with microk8s.
 - An ingres controller and cert-manager (or something similar) for providing access to the jellyfin service and performing TLS termination. [This guide](https://microk8s.io/docs/addon-cert-manager) explains how to configure the cert-manager and ingress in microk8s.
 
+Also note, this example deployment uses the fairly basic 'hostpath' storage for the media library. This will likely be suitable for a home media server running on microk8s or some other lightweight/single node implementation, where the media files are stored in a local directory, but is not suitable for multi-node clusters. Another storage option is to add media to the library via network shares.
+
 ## Kubernetes resources ##
 
 The `base/` directory contains a `PersistentVolumeClaim` , a `Deployment`, `Service`, and `ingress` to deploy Jellyfin
