@@ -4,6 +4,6 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - ingress.yaml
+  - config-storage.yaml
   - media-storage.yaml
-  - pvc.yaml
   - service.yaml
