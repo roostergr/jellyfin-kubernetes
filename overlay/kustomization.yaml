@@ -9,7 +9,6 @@ namespace: jellyfin
 bases:
   - ../base/
 
-
 patches:
   - target:
       kind: Ingress
