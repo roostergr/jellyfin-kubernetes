@@ -12,7 +12,7 @@ To deploy this project you will need:
 
 ## Kubernetes resources ##
 
-The `resources/` directory contains some `PersistentVolumeClaim`s , a `Deployment`, `Service`, and `ingress` to deploy Jellyfin
+The `base/` directory contains a `PersistentVolumeClaim` , a `Deployment`, `Service`, and `ingress` to deploy Jellyfin
 into Kubernetes.
 
 You will likely need to update the following:

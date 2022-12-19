@@ -1,4 +1,6 @@
 # This kustomization file contains exmaples of likely deployment specific configuration changes
+# - Your desired hostname
+# - Path to your media files
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -20,3 +22,10 @@ patches:
       - op: replace
         path: /spec/rules/0/host
         value: jellyfin.yourrealdomain.com 
+  - target:
+      kind: Deployment
+      name: jellyfin
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/volumes/0/hostPath/path
+        value: /mnt/media
