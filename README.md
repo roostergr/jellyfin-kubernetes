@@ -18,9 +18,9 @@ into Kubernetes.
 You will likely need to update the following:
 
 - the ingress controller (see point 1 in the troubleshooting section below).
-- the persistent volume claim to point to your media files.
+- the path to the folder on the local machine that contains your media files.
 
-The examples in the project use [kustomize](https://kustomize.io/) to modify configuration parameters. Kustomize is included in recent versions of kubectl and provides a convenient way to adapt a base set of resources to multiple environments.
+The examples in the project use [kustomize](https://kustomize.io/) to modify configuration parameters. Kustomize is included in recent versions of kubectl and provides a convenient way to adapt a base set of resources to multiple environments. I have included a [sample  overlay](./overlay/kustomization.yaml) which contains example patches for the above configuration parameters.
 
 ## Troubleshooting ##
 
