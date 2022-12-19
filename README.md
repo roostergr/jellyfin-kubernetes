@@ -29,3 +29,8 @@ The examples in the project use [kustomize](https://kustomize.io/) to modify con
 This project is tested on a microk8s kubernetes cluster running on Ubuntu. It should be mostly portable across different kubernetes implementatoins, however keep in mind.
 
 1. The [ingress controller configuration](./resources/ingress.yaml) provided in this project ustilises the **microk8s** `ingress` and `cert-manager` addons. If you are using a different kubernets implementation you may need to modify the ingress configuration beyond changing the hostname of your server.
+
+
+## TODO List ##
+
+- For the media persistant volume resource,`spec.claimRef.namespace` should be set using a kustomize patch.
