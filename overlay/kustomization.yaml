@@ -11,6 +11,7 @@ namespace: jellyfin
 bases:
   - ../base/
 
+# updates base configuration to something implementation specific
 patches:
   - target:
       kind: Ingress
