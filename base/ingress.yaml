@@ -9,10 +9,10 @@ metadata:
 spec:
  tls:
  - hosts:
-   - jellyfin.example.com   # Your hostname goes here
+   - jellyfin.example.com
    secretName: jellyfin-tls-secret
  rules:
- - host: jellyfin.example.com   # Your hostname goes here
+ - host: jellyfin.example.com
    http:
      paths:
      - backend:

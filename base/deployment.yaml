@@ -46,9 +46,6 @@ spec:
       - name: media
         persistentVolumeClaim:
           claimName: media-pvc
-#        hostPath:
-#          path: /mnt/media    # Path to where your media files are downloaded.
-#          type: Directory
       - name: jellyfin-config
         persistentVolumeClaim:
           claimName: jellyfin-config

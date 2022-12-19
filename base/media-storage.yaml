@@ -1,4 +1,4 @@
-# Create a storage class from microk8s default host storage
+# Create a storage class from microk8s default host storage class
 # that allows data retention and volume expansion.
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
