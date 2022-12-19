@@ -4,7 +4,6 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: media-storage
-# In Microk8s when storage plugin enabled it will be only one available provisioner
 provisioner: microk8s.io/hostpath
 reclaimPolicy: Retain
 allowVolumeExpansion: True

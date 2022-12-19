@@ -30,7 +30,6 @@ This project is tested on a microk8s kubernetes cluster running on Ubuntu. It sh
 
 1. The [ingress controller configuration](./resources/ingress.yaml) provided in this project ustilises the **microk8s** `ingress` and `cert-manager` addons. If you are using a different kubernets implementation you may need to modify the ingress configuration beyond changing the hostname of your server.
 
-
 ## TODO List ##
 
 - For the media persistant volume resource,`spec.claimRef.namespace` should be set using a kustomize patch.
