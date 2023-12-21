@@ -5,7 +5,8 @@ kind: Ingress
 metadata:
  name: jellyfin-ingress
  annotations:
-   cert-manager.io/cluster-issuer: lets-encrypt
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
  tls:
  - hosts:
