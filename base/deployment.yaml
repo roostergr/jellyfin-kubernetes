@@ -36,16 +36,16 @@ spec:
         - containerPort: 8096
           protocol: TCP
         volumeMounts:
-        - mountPath: /data/media
-          name: media
-          readOnly: True
         - mountPath: /config
           name: jellyfin-config
+        - mountPath: /data/media
+          name: nfs-vol      
       restartPolicy: Always
       volumes:
-      - name: media
-        persistentVolumeClaim:
-          claimName: media-pvc
       - name: jellyfin-config
         persistentVolumeClaim:
           claimName: jellyfin-config
+      - name: nfs-vol
+        nfs:
+          path: /nfs/Media
+          server: 192.168.10.14
