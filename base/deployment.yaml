@@ -30,7 +30,7 @@ spec:
               apiVersion: v1
               fieldPath: metadata.namespace
         image: docker.io/jellyfin/jellyfin
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         name: jellyfin
         ports:
         - containerPort: 8096
