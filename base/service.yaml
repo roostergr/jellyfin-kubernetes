@@ -10,6 +10,10 @@ spec:
     port: 8096
     protocol: TCP
     targetPort: 8096
+  - name: webhttps
+    port: 8920
+    protocol: TCP
+    targetPort: 8920
   selector:
     app: jellyfin
   type: LoadBalancer
