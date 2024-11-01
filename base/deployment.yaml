@@ -47,5 +47,5 @@ spec:
           claimName: jellyfin-config
       - name: nfs-vol
         nfs:
-          path: /nfs/Media
-          server: 192.168.10.14
+          path: /mnt/user/media
+          server: 192.168.100.172
