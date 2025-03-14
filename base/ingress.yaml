@@ -9,7 +9,7 @@ metadata:
 spec:
  ingressClassName: traefik
  rules:
- - host: jelly.steam-deck.gr
+ - host: jellyfin.steam-deck.gr
    http:
      paths:
      - backend:
