@@ -9,7 +9,7 @@ metadata:
 spec:
  ingressClassName: traefik
  rules:
- - host: jelly.gimli.local
+ - host: jelly.steam-deck.gr
    http:
      paths:
      - backend:
