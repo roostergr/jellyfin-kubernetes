@@ -5,13 +5,9 @@ kind: Ingress
 metadata:
  name: jellyfin-ingress
  annotations:
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
- tls:
- - hosts:
-   - jelly.gimli.local
-   secretName: jellyfin-tls-secret
+ ingressClassName: traefik
  rules:
  - host: jelly.gimli.local
    http:
