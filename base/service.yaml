@@ -16,4 +16,4 @@ spec:
     targetPort: 8920
   selector:
     app: jellyfin
-  type: LoadBalancer
+  type: ClusterIP
