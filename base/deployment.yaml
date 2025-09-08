@@ -48,4 +48,4 @@ spec:
       - name: nfs-vol
         nfs:
           path: /mnt/user/media
-          server: 192.168.100.172
+          server: tower.steam-deck.gr
